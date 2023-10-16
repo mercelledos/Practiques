@@ -26,17 +26,17 @@ void loop() {
   Serial.println(measurement);
   delay(10);
 
-  if (measurement > 100 && measurement <= 300) {
+  if (measurement > 100 && measurement <= 600) {
     digitalWrite(red, LOW);
     digitalWrite(green, LOW);
     digitalWrite(blue, HIGH);
   
-  } else if (measurement > 300 && measurement <= 450) {
+  } else if (measurement > 600 && measurement <= 10000) {
     digitalWrite(red, LOW);
     digitalWrite(green, HIGH);
     digitalWrite(blue, LOW);
     
-  } else if (measurement > 450) {
+  } else if (measurement > 10000) {
     digitalWrite(red, HIGH);
     digitalWrite(green, LOW);
     digitalWrite(blue, LOW);
